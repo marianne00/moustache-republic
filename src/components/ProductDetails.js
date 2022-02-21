@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import classnames from 'classnames'
 import ClassicTee from '../assets/images/classic-tee.jpg'
+import CartIcon from '../assets/images/shopping-cart.png'
 
 const ProductDetails = () => {
 
@@ -57,7 +58,9 @@ const ProductDetails = () => {
                 })} onMouseEnter={() => {
                     cartItems.length !== 0 && setCartStatus('active')
                 }}>
-                    My Cart ( {cartItems.reduce((total, obj) => obj.count + total,0)} )
+                    <span className='cart-txt'>My Cart</span> 
+                    <img src={CartIcon} className='cart-icon' alt='cart-icon' />
+                    ( {cartItems.reduce((total, obj) => obj.count + total,0)} )
 
                     <div className='cart-container'>
                         {
