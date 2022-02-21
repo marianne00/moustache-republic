@@ -1,0 +1,127 @@
+.details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 80%;
+}
+
+.img-product {
+    margin-right: 80px;
+    max-width: 500px;
+    max-height: 600px;
+}
+
+.product-details-container {
+    flex: 0 0 40%;
+}
+
+.product-options {
+    width: 100%;
+}
+
+.sizing-options {
+    display: flex;
+
+    div {
+        padding: 10px 12px;
+        margin-right: 5px;
+        font-size: 12px;
+        color: $gray-400;
+        border: 2px solid $gray-200;
+    
+        cursor: pointer;
+    
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .active {
+        color: $black-400;
+        border: 2px solid $black-400;
+    }
+}
+
+.cart-lbl {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    cursor: pointer;
+
+    &.active {
+        &:hover {
+            position: absolute;
+            color: $black-400;
+            background-color: white;
+            border-top: 1px solid $gray-200;
+            border-right: 1px solid $gray-200;
+            border-left: 1px solid $gray-200;
+    
+            .cart-container {
+                display: block;
+            }
+        }
+    }
+}
+
+.cart-container {
+    display: none;
+    position: absolute;
+    // z-index: -1;
+    top: 34px;
+    right: -1px;
+    width: 275px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid $gray-200;
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: $black-400;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.item-img {
+    margin-right: 30px;
+    max-width: 75px;
+}
+
+@media screen and (max-width: 1199px) {
+    .details-container {
+        justify-content: space-between;
+    }
+
+    .img-product {
+        margin-right: 0;
+        max-width: 300px;
+    }
+}
+
+ @media screen and (max-width: 991px) {
+    .details-container {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .product-details-container {
+        flex: 0 0 75%;
+        margin-top: 30px;
+    }
+ }

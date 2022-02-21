@@ -1,0 +1,26 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 230px;
+    margin: 20px;
+    height: 35px;
+    background-color: $gray-100;
+}
+
+.cart-lbl {
+    font-size: 12px;
+    color: $gray-400;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header {
+        padding: 0 100px;
+    }
+}
+
+ @media screen and (max-width: 991px) {
+  .header {
+      padding: 0 20px;
+  } 
+}

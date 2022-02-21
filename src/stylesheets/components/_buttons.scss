@@ -1,0 +1,15 @@
+.btn-cart {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: $black-400;
+    border: 2px solid $black-400;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $black-400;
+        color: $white;
+        transition: .2s background-color ease-in-out;
+    }
+}

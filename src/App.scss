@@ -1,0 +1,10 @@
+@import 
+  './stylesheets/global/container',
+  './stylesheets/global/colors',
+  './stylesheets/global/texts',
+  './stylesheets/global/breakpoints';
+
+@import
+  './stylesheets/components/header',
+  './stylesheets/components/buttons',
+  './stylesheets/components/product-details';
